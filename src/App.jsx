@@ -1,12 +1,9 @@
-import './styles/styles.css';
+import React from 'react';
+import "./styles/styles.css";
+import AppRouter from './routes/AppRouter';
 
-function App() {
- 
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hola React + Tailwind</h1>
-    </>
-  )
+export default function App() {
+  return <AppRouter />;
 }
 
-export default App;
+
