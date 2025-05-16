@@ -6,30 +6,31 @@ import "../styles/styles.css";
 const timelineData = [
   {
     date: "Mayo 2024",
-    image: "/galery/1.webp",
+    image: `${import.meta.env.BASE_URL}galery/1.webp`,
     text: "Visita al Jurásico 🦖",
   },
   {
     date: "Junio 2024",
-    image: "/galery/2.webp",
+    image: `${import.meta.env.BASE_URL}galery/2.webp`,
     text: "Carita de melocotón 🍑",
   },
   {
     date: "Agosto 2024",
-    image: "/galery/3.webp",
+    image: `${import.meta.env.BASE_URL}galery/3.webp`,
     text: "Viva México Señores",
   },
   {
     date: "Septiembre 2024",
-    image: "/galery/4.webp",
+    image: `${import.meta.env.BASE_URL}galery/4.webp`,
     text: "Siendo gorditos en La Regenta (a ver cuando invitas a merendar)",
   },
   {
     date: "Abril 2025",
-    image: "/galery/5.webp",
-    text: "Salto temporal porqué me quedé sin móvil sadge, aún así nuestra mejor foto by far",
+    image: `${import.meta.env.BASE_URL}galery/5.webp`,
+    text: "Salto temporal porque me quedé sin móvil sadge, aún así nuestra mejor foto by far",
   },
 ];
+
 
 export default function FinalTimeline() {
   const containerRef = useRef(null);
