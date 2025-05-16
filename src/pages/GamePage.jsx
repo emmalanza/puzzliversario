@@ -4,10 +4,23 @@ import PuzzleBoard from '../components/PuzzleBoard';
 import LevelCompleteModal from '../components/LevelCompleteModal';
 
 const levels = [
-  { size: 3, image: '/puzzle1.webp', message: '¡Qué buena cabrón!' },
-  { size: 4, image: '/puzzle2.webp', message: '¡Lo que juegas pá!' },
-  { size: 5, image: '/puzzle3.webp', message: '¡Promoted to GoldV!' },
+  {
+    size: 3,
+    image: `${import.meta.env.BASE_URL}puzzle1.webp`,
+    message: '¡Qué buena cabrón!'
+  },
+  {
+    size: 4,
+    image: `${import.meta.env.BASE_URL}puzzle2.webp`,
+    message: '¡Lo que juegas pá!'
+  },
+  {
+    size: 5,
+    image: `${import.meta.env.BASE_URL}puzzle3.webp`,
+    message: '¡Promoted to GoldV!'
+  },
 ];
+
 
 export default function GamePage() {
   const [level, setLevel] = useState(0);

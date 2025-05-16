@@ -1,10 +1,22 @@
 import React from 'react';
 
 const photos = [
-  { src: '/sticker1.webp', style: { top: '10%', left: '5%', animationDelay: '0s' } },
-  { src: '/sticker1.webp', style: { top: '5%', right: '5%', animationDelay: '1.5s' } },
-  { src: '/sticker1.webp', style: { bottom: '5%', left: '1%', animationDelay: '3s' } },
-  { src: '/sticker1.webp', style: { bottom: '5%', right: '10%', animationDelay: '4.5s' } },
+  {
+    src: `${import.meta.env.BASE_URL}sticker1.webp`,
+    style: { top: '10%', left: '5%', animationDelay: '0s' },
+  },
+  {
+    src: `${import.meta.env.BASE_URL}sticker1.webp`,
+    style: { top: '5%', right: '5%', animationDelay: '1.5s' },
+  },
+  {
+    src: `${import.meta.env.BASE_URL}sticker1.webp`,
+    style: { bottom: '5%', left: '1%', animationDelay: '3s' },
+  },
+  {
+    src: `${import.meta.env.BASE_URL}sticker1.webp`,
+    style: { bottom: '5%', right: '10%', animationDelay: '4.5s' },
+  },
 ];
 
 export default function StickerPhotos() {
